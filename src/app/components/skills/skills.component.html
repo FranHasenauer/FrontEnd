@@ -1,0 +1,64 @@
+<div class="row">
+    <h1 class="titulo">Experiencia Laboral</h1>
+    <div class="col-lg-12">
+        <section *ngFor=" let experiencia of experienciaLaboral?.experiencia" class="container">
+            <ul>
+                <li>
+                    <h1 class="nombre">{{experiencia.nombreEmpresa}}</h1>
+                    <h4> <b>Puesto:</b> {{experiencia.puesto}}</h4>
+                    <h4> <b>Antiguedad:</b> Desde: {{experiencia.fechaIngreso}} Hasta: {{experiencia.fechaEgreso}}</h4>
+                    <h4><b>Descripcion:</b> {{experiencia.descripcionEmpresa}}</h4>
+                    <h4><b>Tareas realizadas:</b> {{experiencia.desemp}}</h4>
+                    <h4><b>Sitio Web de la empresa: </b> <a target="_blank" href="{{experiencia.urlEmpresa}}">pinche
+                            aquí</a> </h4>
+
+                </li>
+            </ul>
+        </section>
+        <section class="hardAndSoft"> 
+            <h1 class="titulo">Hard and Soft Skills</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">HTML/CSS</h2>
+                    <circle-progress [percent]="25" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">Java</h2>
+                    <circle-progress [percent]="25" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">JavaScript</h2>
+                    <circle-progress [percent]="15" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">Angular</h2>
+                    <circle-progress [percent]="30" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">Typescript</h2>
+                    <circle-progress [percent]="15" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">SpringBoot</h2>
+                    <circle-progress [percent]="35" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
+                    <h2 class="titulo">MySQL workbench</h2>
+                    <circle-progress [percent]="12" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+            </div>
+        </section>

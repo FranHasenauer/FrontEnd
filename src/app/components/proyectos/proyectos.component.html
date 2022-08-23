@@ -1,0 +1,20 @@
+<div class="separador">
+    <h2 class="text-separador">Mis proyectos</h2>
+</div>
+
+<section *ngFor="let proyectos of proyectosCard.proyectos"  class="container">
+    <div class="row cont-row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 custom-section">
+            <img [src]= "proyectos.imgCard" class="img-card">
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <div class="card-body">
+                <h5 class="card-title"> {{proyectos.nombreCard}} </h5>
+                <p class="card-text">{{proyectos.descripcionCard}}</p>
+                <a target="_blank" [href]="proyectos.cardUrl" class="btn btn-secondary">Visita el
+                    sitio</a>
+
+            </div>
+        </div>
+    </div>
+

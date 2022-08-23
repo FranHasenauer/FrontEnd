@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-form {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color: rgb(235, 174, 68); // este tendria que ser del color principal
+    box-shadow: 13px 13px 20px #8d7f2d, -13px -13px 20px #5a3709; //aca tendria que ir el color secundario o el mismo color que los iconos
+    color: rgb(90, 60, 10);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.custom-form input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px #8d7f2d, inset 5px 5px 10px
+    #5a3709;
+    border: 0 none;
+    background: #ebf5fc;
+  }
+
+.custom-form #btn {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 0.875rem;
+    color: #5a3709;
+    font-weight: bold;
+    background-color:rgb(219, 105, 12);
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0.1rem;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #5a3709, -3px -3px 8px #1d1902;
+    cursor: pointer;
+    margin-top: 1rem;
+   }
+   p{
+    margin-top: 2rem;
+   }

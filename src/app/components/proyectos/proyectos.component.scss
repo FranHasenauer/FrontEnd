@@ -1,0 +1,70 @@
+/////////////////////////////////////////////////
+/* DECLARANDO VARIABLES */
+////////////////////////////////////////////////
+
+$principal: rgb(240, 215, 171);
+$secundario: rgb(235, 174, 68);
+$boton: rgb(219, 105, 12);
+
+
+.container {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+.cont-row {
+    background-color: antiquewhite;
+    border-radius: 1.5rem;
+    padding-left: 4rem;
+}
+
+.custom-section {
+    padding-top: 2rem;
+    width: 18rem;
+    height: 18rem;
+}
+
+.card-body {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+.img-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: solid rgb(70, 64, 15) 3px;
+}
+
+.card-title {
+    font-family: 'Nanum Gothic';
+    text-align: center;
+    text-shadow: rgb(10, 6, 3) 3px 2px 4px;
+    font-size: larger;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.card-text {
+    font-family: 'Nanum Gothic';
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+    color: rgb(110, 70, 0);
+
+}
+.separador {
+    background-color: $secundario;
+    text-shadow: rgb(10, 6, 3) 3px 2px 4px;
+    border-radius: 15px;
+    margin: 0.5rem 8rem;
+    text-align: center;
+    padding-bottom: 0.3rem;
+    padding-top: 0.5rem;
+}
+.text-separador{
+    font-size: 25px;
+
+}
