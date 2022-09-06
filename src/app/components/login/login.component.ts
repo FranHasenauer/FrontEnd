@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,16 +7,33 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  email= '';
-  password= '';
-  
-  
- 
+  email = '';
+  password = '';
+
+
+  form: FormGroup;
   //inyectamos en el constructor el FormBuilder
-  constructor() {
-    //Crear el grupo de controles para el formulario de Login
+  constructor(private formbuilder: FormBuilder) {
+    this.form = this.formbuilder.group(
+      {
+        email: ["", [Validators.required, Validators.email]],
+        password: ["", [Validators.required, Validators.minLength(8)]],
+        deviceInfo: this.formbuilder.group({
+          deviceId: ["17867868768"],
+          deviceType: ["DEVICE_TYPE_ANDROID"],
+          notificationToken: ["67657575eececc34"]
+        })
+      }
+
+    )
+
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+    }
+    get Email(){
+      return this.form.get("email");
+    }
+    get Password(){
+      return this.form.get("password");
+    }
 }

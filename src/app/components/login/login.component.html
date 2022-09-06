@@ -1,23 +1,23 @@
 <div class="login">
-    <form class="custom-form" method="post">
+    <form [formGroup]="form" class="custom-form" method="post">
         <h1>Login</h1>
-        <input 
-        type="email"
-        name="email"
-        placeholder="Email"
-        required="required"
-        />
-
+        <input formControlName="email" [ngClass]="{'is-invalid':Email?.errors && Email?.touched,
+        'is-valid':!Email?.errors && Email?.touched}" type="email" name="email" placeholder="Email"
+            required="required" />
+        <div *ngIf="Email?.errors && Email?.touched">
+            <p *ngIf="Email?.hasError('required')"> El email es requerido</p>
+            <p *ngIf="Email?.hasError('email')"> El email debe ser valido</p>
+        </div>
         <!-- Aca arriba tendira que ir [(ngModel)]="email" -->
-        <input 
-        type="password"                 
-        name="password"
-        placeholder="Password"
-        required="required"
-        /> 
-        
+        <input formControlName="password" [ngClass]="{'is-invalid':Email?.errors && Email?.touched,
+        'is-valid':!Email?.errors && Email?.touched}" type="password" name="password" placeholder="Password"
+            required="required" />
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')"> La contraseña es requerida</p>
+            <p *ngIf="Password?.hasError"> La contraseña debe ser de 8 o mas caracteres</p>
+        </div>
         <!-- Aca arriba tendira que ir [(ngModel)]="password" -->
         <a href="/login" id="btn" class="btn btn-secondary" type="submit">Vamos!</a>
-        <p>Todavia no tienes un usuario?  <a href="/register" type="submit">registrate!</a></p>
+        <p>Todavia no tienes un usuario? <a href="/register" type="submit">registrate!</a></p>
     </form>
 </div>
