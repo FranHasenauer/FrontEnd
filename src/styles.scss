@@ -33,7 +33,14 @@ $boton: rgb(219, 105, 12);
         background-color: $secundario;
     }
     
-    
+    .btn-secondary{
+        color: rgb(58, 34, 6);
+        background-color: $principal;
+        :hover{
+            color: purple;
+            background-color: $secundario;
+        }
+    }
 
 /* Imagen de perfil */
 .img-fluid {
