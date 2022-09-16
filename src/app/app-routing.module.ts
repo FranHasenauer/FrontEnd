@@ -6,7 +6,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ErrorPersonalizadoComponent } from './components/error-personalizado/error-personalizado.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/login/register/register.component';
-import { ProfileComponent } from './components/profile/profile.component';
+
 
 const routes: Routes = [
 { path: 'login', component: LoginComponent},
@@ -14,7 +14,7 @@ const routes: Routes = [
 { path: 'skills', component:SkillsComponent},
 { path: 'proyectos', component:ProyectosComponent},
 { path: 'info', component:MiInformacionComponent },
-/* { path: 'profile', component: ProfileComponent, canActivate:[AuthGuard]}, */
+
 
 
 

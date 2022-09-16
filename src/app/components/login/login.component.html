@@ -1,23 +1,16 @@
-<div class="login">
-    <form class="custom-form" method="post">
+<div class="custom-form">
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
         <h1>Login</h1>
-        <input 
-        type="email"
-        name="email"
-        placeholder="Email"
-        required="required"
-        />
+        <input type="email" id="nombreUsuario" name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario"
+            required method="post" />
+        <label for="nombreUsuario"></label>
 
-        <!-- Aca arriba tendira que ir [(ngModel)]="email" -->
-        <input 
-        type="password"                 
-        name="password"
-        placeholder="Password"
-        required="required"
-        /> 
-        
-        <!-- Aca arriba tendira que ir [(ngModel)]="password" -->
-        <a href="/login" id="btn" class="btn btn-secondary" type="submit">Vamos!</a>
-        <p>Todavia no tienes un usuario?  <a href="/register" type="submit">registrate!</a></p>
+        <input type="password" id="password" name="password" placeholder="Contraseña" [(ngModel)]="password" required
+            method="post" />
+        <label class="form-label" for="password"></label>
+        <div>
+            <button type="submit" id="btn" class="btn btn-secondary">Vamos!</button>
+            <p>Todavia no tienes un usuario? <a href="/register" type="submit">registrate!</a></p>
+        </div>
     </form>
 </div>

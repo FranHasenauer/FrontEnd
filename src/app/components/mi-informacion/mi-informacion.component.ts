@@ -8,13 +8,13 @@ import { PersonaService } from 'src/app/servicios/persona.service';
   styleUrls: ['./mi-informacion.component.scss']
 })
 export class MiInformacionComponent implements OnInit {
-  persona:persona = new persona("","","");
-  
-  constructor(public personaService:PersonaService) { }
+  persona: persona = new persona("", "", "");
+
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data=>{this.persona = data})
-      
-  };
+    this.personaService.getPersona().subscribe(data => { this.persona = data })
+
   }
+}
 
