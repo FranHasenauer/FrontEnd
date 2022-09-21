@@ -15,12 +15,17 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ErrorPersonalizadoComponent } from './components/error-personalizado/error-personalizado.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule,NgForm,ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/login/register/register.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AuthService } from './servicios/auth.service';
 import { PersonaService } from './servicios/persona.service';
+import { interceptorProvider } from './servicios/interceptor-service';
+import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
+import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia-laboral/edit-experiencia/edit-experiencia.component';
+
 
 
 
@@ -37,6 +42,9 @@ import { PersonaService } from './servicios/persona.service';
     SkillsComponent,
     LoginComponent,
     RegisterComponent,
+    ExperienciaLaboralComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
 
     
     
@@ -49,11 +57,14 @@ import { PersonaService } from './servicios/persona.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
     HttpClientModule,
     FontAwesomeModule,
     RouterModule,
-    FormsModule,
+   
     ReactiveFormsModule,
+    
+   
    
    
     NgCircleProgressModule.forRoot({
@@ -71,7 +82,7 @@ import { PersonaService } from './servicios/persona.service';
     
     
   ],
-  providers: [PortfolioService,FormsModule,AuthService,PersonaService],
+  providers: [PortfolioService,FormsModule,AuthService,PersonaService,interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,30 @@
+<div>
+    <form (ngSubmit)="onCreate()" novalidate="ngForm" class="custom-form">
+        <h1>Agregar Experiencia</h1>
+        <div class="form-gorup">
+            <label for="nombreEmpresa">Nombre de la empresa</label>
+            <input type="text" class="form-control" id="nombreEmpresa" name="nombreEmpresa" [(ngModel)]="nombreEmpresa"
+                required>
+                <label for="fechaIn">Fecha de ingreso</label>
+            <input type="text" class="form-control" id="fechaIn" name="fechaIn" [(ngModel)]="fechaIn"
+                required>
+                <label for="fechaOut">Fecha de salida</label>
+            <input type="text" class="form-control" id="fechaOut" name="fechaOut" [(ngModel)]="fechaOut"
+                required>
+                <label for="puestoEmpresa">Puesto</label>
+            <input type="text" class="form-control" id="puestoEmpresa" name="puestoEmpresa" [(ngModel)]="puestoEmpresa"
+                required>
+                <label for="domicilioEmpresa">Domicilio Empresa</label>
+            <input type="text" class="form-control" id="domicilioEmpresa" name="domicilioEmpresa" [(ngModel)]="domicilioEmpresa"
+                required>
+                <label for="descripcionEmpresa">descripcion de la Empresa</label>
+            <input type="text" class="form-control" id="descripcionEmpresa" name="descripcionEmpresa" [(ngModel)]="descripcionEmpresa"
+                required>
+                <label for="urlEmpresa">url de la empresa</label>
+            <input type="text" class="form-control" id="urlEmpresa" name="urlEmpresa" [(ngModel)]="urlEmpresa"
+                required>
+                <button class="btn btn-secondary">Agregar</button>
+        </div>
+
+    </form>
+</div>

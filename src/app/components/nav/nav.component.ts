@@ -24,5 +24,6 @@ export class NavComponent implements OnInit {
   }
   login() {
     this.router.navigate(['/login'])
+    
   }
 }

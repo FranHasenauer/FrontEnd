@@ -1,5 +1,4 @@
 {
-    "nombre": "Francisco Hasenauer",
     "imgBanner": "assets/BannerFox.jpg",
     "page404": "assets/404error.png",
     "page404descripcion": "Lamentamos el inconveniente, la pagina a la que quiere ingresar no existe. Por favor regrese a la pagina principal.",
@@ -40,28 +39,26 @@
         }
     ],
     "experiencia": [
-        {
+        {   "id": 1,
             "nombreEmpresa": "Orfisa SRL",
             "puesto": "Empleado",
-            "fechaIngreso":"06/05/2011",
-            "fechaEgreso":"actualidad",
-            "desemp":"Atencion al publico, asesoramiento personalizado",
+            "fechaIngreso": "06/05/2011",
+            "fechaEgreso": "actualidad",
+            "desemp": "Atencion al publico, asesoramiento personalizado",
             "domicilioEmpresa": "Enrique Carbo 844, Parana-Entre Rios, Argentina",
             "descripcionEmpresa": "Una empresa con mas de 40 años de experiencia en la atencion y prestacion de servicios funebres, destacada por la empatia y compromiso de sus empleados.",
             "urlEmpresa": "https://guiadeparana.com/pagina/Orfisa-SRL/"
-            
         },
         {
+            "id": 2,
             "nombreEmpresa": "Proyectos personales",
             "puesto": "Freelancer",
-            "fechaIngreso":"20/06/2022",
-            "fechaEgreso":"actualidad",
-            "desemp":"creacion de proyectos personales para adquirir conocimientos extras",
+            "fechaIngreso": "20/06/2022",
+            "fechaEgreso": "actualidad",
+            "desemp": "creacion de proyectos personales para adquirir conocimientos extras",
             "domicilioEmpresa": "Parana-Entre Rios, Argentina",
             "descripcionEmpresa": "Estoy desarrollando a pulmon todo proyecto que se me cruce, avanzando desde lo mas sencillo a lo mas complicado",
             "urlEmpresa": "https://argentinaprograma.inti.gob.ar/"
-            
         }
-
     ]
 }
