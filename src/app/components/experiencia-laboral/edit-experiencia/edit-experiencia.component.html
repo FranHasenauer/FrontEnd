@@ -3,7 +3,8 @@
         <h1>Modificar Experiencia</h1>
         <div class="form-gorup">
             <label for="nombreEmpresa">Nombre de la empresa</label>
-            <input type="text" class="form-control" id="nombreEmpresa" name="nombreEmpresa"[(ngModel)]="expLab.nombreEmpresa">
+            <input type="text" class="form-control" id="nombreEmpresa" name="nombreEmpresa"
+                [(ngModel)]="expLab.nombreEmpresa">
             <label for="fechaIn">Fecha de ingreso</label>
             <input type="text" class="form-control" id="fechaIn" name="fechaIn" [(ngModel)]="expLab.fechaIn">
             <label for="fechaOut">Fecha de salida</label>
@@ -19,7 +20,9 @@
                 [(ngModel)]="expLab.descripcionEmpresa">
             <label for="urlEmpresa">url de la empresa</label>
             <input type="text" class="form-control" id="urlEmpresa" name="urlEmpresa" [(ngModel)]="expLab.urlEmpresa">
+
             <button class="btn btn-secondary">Modificar</button>
+
         </div>
 
     </form>

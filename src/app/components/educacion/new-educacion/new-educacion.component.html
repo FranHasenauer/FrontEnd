@@ -1,0 +1,17 @@
+<div>
+    <form (ngSubmit)="onCreate()" novalidate="ngForm" class="custom-form">
+        <h1>Agregar Educacion</h1>
+        <div class="form-gorup">
+            <label for="nombreE">Institucion</label>
+            <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE"
+                required>
+               
+                <label for="descripcionE">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE"
+                required>
+               
+                <button class="btn btn-secondary">Agregar</button>
+        </div>
+
+    </form>
+</div>

@@ -9,6 +9,9 @@ import { RegisterComponent } from './components/login/register/register.componen
 import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
 import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia-laboral/edit-experiencia/edit-experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
 
 
 const routes: Routes = [
@@ -20,7 +23,9 @@ const routes: Routes = [
 { path: 'expe', component:ExperienciaLaboralComponent },
 { path: 'newexpe', component:NewExperienciaComponent },
 { path: 'editexpe/:id', component:EditExperienciaComponent },
-
+{ path: 'edu', component:EducacionComponent },
+{ path: 'newedu', component:NewEducacionComponent },
+{ path: 'editedu/:id', component:EditEducacionComponent },
 
 
 
