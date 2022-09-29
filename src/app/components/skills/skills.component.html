@@ -1,50 +1,26 @@
 <div class="row">
- 
-        <section class="hardAndSoft"> 
+
+    <section class="hardAndSoft">
+        <div>
             <h1 class="titulo">Skills</h1>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">HTML/CSS</h2>
-                    <circle-progress [percent]="70" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
+            <button class="btn" *ngIf="isLogged" routerLink="/newskill"><i class="fa-solid fa-circle-plus"></i></button>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills" *ngFor="let skills of skills">
+                <h2 class="titulo">{{skills.nombre}}</h2>
+                <div class="">
+                    <button class="btn" *ngIf="isLogged"
+                    routerLink="/editskill/{{skills.id}}"><i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button class="btn" (click)="borrar(skills.id)" *ngIf="isLogged">
+                    <i class="fa-solid fa-trash "> </i></button>
                 </div>
+                <circle-progress [percent]="(skills.porcentaje)" [radius]="100" [outerStrokeWidth]="15"
+                    [innerStrokeWidth]="10" [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'"
+                    [animation]="true" [animationDuration]="300"></circle-progress>
                 
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">JavaScript</h2>
-                    <circle-progress [percent]="25" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">Angular</h2>
-                    <circle-progress [percent]="70" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">Typescript</h2>
-                    <circle-progress [percent]="20" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">Java</h2>
-                    <circle-progress [percent]="40" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">SpringBoot</h2>
-                    <circle-progress [percent]="40" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" id="skills">
-                    <h2 class="titulo">MySQL</h2>
-                    <circle-progress [percent]="15" [radius]="100" [outerStrokeWidth]="15" [innerStrokeWidth]="10"
-                        [outerStrokeColor]="'#007248'" [innerStrokeColor]="'#ff5527'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                </div>
             </div>
-        </section>
+
+        </div>
+    </section>

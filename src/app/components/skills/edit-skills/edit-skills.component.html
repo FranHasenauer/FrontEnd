@@ -1,0 +1,16 @@
+<div>
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="custom-form">
+        <h1>Agregar proyecto</h1>
+        <div class="form-gorup">
+
+            <label for="nombre">Nombre Skill</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skills.nombre" required>
+
+            <label for="porcentaje">Porcentaje</label>
+            <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skills.porcentaje" required>
+
+            <button class="btn btn-secondary">Actualizar</button>
+        </div>
+
+    </form>
+</div>

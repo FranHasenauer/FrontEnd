@@ -1,0 +1,15 @@
+<div>
+    <form (ngSubmit)="onCreate()" novalidate="ngForm" class="custom-form">
+        <h1>Agregar Skill</h1>
+        <div class="form-gorup">
+            <label for="nombre">Nueva Skill</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+
+            <label for="porcentaje">Porcentaje</label>
+            <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje"
+                required>
+            <button class="btn btn-secondary">Agregar</button>
+        </div>
+
+    </form>
+</div>
