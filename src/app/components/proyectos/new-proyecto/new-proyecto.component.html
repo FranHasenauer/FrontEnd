@@ -1,0 +1,22 @@
+<div>
+    <form (ngSubmit)="onCreate()" novalidate="ngForm" class="custom-form">
+        <h1>Agregar proyecto</h1>
+        <div class="form-gorup">
+            <label for="imgP">Imagen</label>
+            <input type="text" class="form-control" id="imgP" name="imgP" [(ngModel)]="imgP" required>
+
+            <label for="nombreP">Nombre del Proyecto</label>
+            <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP" required>
+
+            <label for="descripcionP">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="descripcionP"
+                required>
+
+            <label for="urlP">Url</label>
+            <input type="text" class="form-control" id="urlP" name="urlP" [(ngModel)]="urlP" required>
+
+            <button class="btn btn-secondary">Agregar Proyecto</button>
+        </div>
+
+    </form>
+</div>

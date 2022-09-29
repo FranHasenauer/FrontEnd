@@ -28,7 +28,7 @@ $boton: rgb(219, 105, 12);
 .card-body {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    
+
 }
 
 .img-card {
@@ -55,6 +55,7 @@ $boton: rgb(219, 105, 12);
     color: rgb(110, 70, 0);
 
 }
+
 .separador {
     background-color: $secundario;
     text-shadow: rgb(10, 6, 3) 3px 2px 4px;
@@ -64,7 +65,40 @@ $boton: rgb(219, 105, 12);
     padding-bottom: 0.3rem;
     padding-top: 0.5rem;
 }
-.text-separador{
+
+.text-separador {
     font-size: 25px;
 
+}
+
+.btn {
+    padding: 0;
+    margin: 0;
+    padding-right: 0.2rem;
+    height: auto;
+    width: auto;
+    margin-top: 1rem;
+
+}
+.edit{
+    margin-left: 3rem;
+    padding-left: 0.5rem;
+    border-bottom: 1rem;
+    border-right: 1rem;
+    box-shadow: rgb(90, 80, 80) 0.5rem 0.5rem 0.5rem 1px ;
+    background-color: rgb(240, 208, 167);
+}
+.btn-ed{
+    padding: 0;
+    margin: 0;
+    padding-right: 0.2rem;
+    height: auto;
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    padding-left: 0.5rem;
+    border-bottom: 1rem;
+    border-right: 1rem;
+    box-shadow: rgb(90, 80, 80) 0.5rem 0.5rem 0.5rem 1px ;
+    background-color: rgb(240, 208, 167);
 }

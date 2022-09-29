@@ -28,6 +28,8 @@ import { EditExperienciaComponent } from './components/experiencia-laboral/edit-
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
 
 
 
@@ -51,6 +53,8 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     EducacionComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+    NewProyectoComponent,
+    EditProyectoComponent,
     
     
    

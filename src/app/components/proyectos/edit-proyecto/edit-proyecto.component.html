@@ -1,0 +1,22 @@
+<div>
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="custom-form">
+        <h1>Agregar proyecto</h1>
+        <div class="form-gorup">
+            <label for="imgP">Imagen</label>
+            <input type="text" class="form-control" id="imgP" name="imgP" [(ngModel)]="proyectos.imgP" required>
+
+            <label for="nombreP">Nombre del Proyecto</label>
+            <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="proyectos.nombreP" required>
+
+            <label for="descripcionP">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="proyectos.descripcionP"
+                required>
+
+            <label for="urlP">Url</label>
+            <input type="text" class="form-control" id="urlP" name="urlP" [(ngModel)]="proyectos.urlP" required>
+
+            <button class="btn btn-secondary">Actualizar Proyecto</button>
+        </div>
+
+    </form>
+</div>
