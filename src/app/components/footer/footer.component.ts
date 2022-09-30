@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faMapLocation } from '@fortawesome/free-solid-svg-icons';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
