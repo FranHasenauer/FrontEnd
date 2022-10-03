@@ -8,7 +8,7 @@ import { faMapLocation } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PortafolioAngular';
+  title = 'Fran Hasenauer';
  
   faMapLocation = faMapLocation;
   

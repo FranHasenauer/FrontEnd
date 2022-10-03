@@ -43,10 +43,11 @@
             </li>
         </ul>
         
-        
+        <!--     -->
+       
         <div class="d-flex">
-            <button type="button" class="btn btn-secondary"  (click)="login()" *ngIf="!isLogged" > Entrar!</button>
-            <button type="button" class="btn btn-secondary"  (click)="onLogOut()" *ngIf="isLogged"> Salir! </button>
+            <button type="button" class="btn btn-secondary" (click)="login()" *ngIf="!isLogged"> Entrar!</button>
+             <button type="button" class="btn btn-secondary"(click)="login()" *ngIf="!isLogged" > Salir! </button>
           
         </div>
       </div>

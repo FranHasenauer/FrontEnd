@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  proURL = 'https://backendfranh.herokuapp.com/pro/'
+  proURL='https://backendfranh.herokuapp.com/pro/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyectos[]> {

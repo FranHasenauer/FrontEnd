@@ -15,7 +15,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ErrorPersonalizadoComponent } from './components/error-personalizado/error-personalizado.component';
 import { RouterModule } from '@angular/router';
-import { FormBuilder, FormsModule,NgForm,ReactiveFormsModule } from '@angular/forms';
+import {  FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/login/register/register.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -59,12 +59,12 @@ import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills
     EditProyectoComponent,
     NewSkillsComponent,
     EditSkillsComponent
-    
-    
-   
-  
+
+
+
+
   ],
-  
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -75,11 +75,7 @@ import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills
     FontAwesomeModule,
     RouterModule,
     ReactiveFormsModule,
-    
-    
-   
-   
-   
+
     NgCircleProgressModule.forRoot({
       radius: 100,
       outerStrokeWidth: 16,
@@ -87,15 +83,12 @@ import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-      
+
     }),
-    
-    
-   
-    
-    
+
   ],
-  providers: [PortfolioService,FormsModule,AuthService,PersonaService,interceptorProvider],
+  providers: [PortfolioService, FormsModule, AuthService, PersonaService, interceptorProvider],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
