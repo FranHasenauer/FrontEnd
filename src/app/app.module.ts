@@ -37,6 +37,7 @@ import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,8 +59,8 @@ import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills
     NewProyectoComponent,
     EditProyectoComponent,
     NewSkillsComponent,
-    EditSkillsComponent
-
+    EditSkillsComponent,
+    
 
 
 

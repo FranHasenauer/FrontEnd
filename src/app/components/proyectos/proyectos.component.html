@@ -1,5 +1,7 @@
 <div class="separador">
     <h2 class="text-separador">Mis proyectos</h2>
+    <button class="btn edit" *ngIf="isLogged" routerLink="/newpro"><i class="fa-solid fa-circle-plus"></i>
+        Agregar</button>
 </div>
 <section *ngFor="let Proyectos of proyectos" class="container">
     <div class="row cont-row">
