@@ -7,11 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-<<<<<<< HEAD
   URL = 'https://franhasenauer.onrender.com/skills/'
-=======
-  URL='https://franhasenauer.onrender.com/skill/';
->>>>>>> a345c1e632e0ad9fe78658ada5953c9dd4d02748
 
   constructor(private httpClient:HttpClient) { }
 

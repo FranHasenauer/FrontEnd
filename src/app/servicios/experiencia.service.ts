@@ -7,11 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-<<<<<<< HEAD
-  expURL = 'https://franhasenauer.onrender.com/expe/'
-=======
-  expURL='https://franhasenauer.onrender.com/expe/';
->>>>>>> a345c1e632e0ad9fe78658ada5953c9dd4d02748
+
 
   constructor(private httpClient: HttpClient) { }
 

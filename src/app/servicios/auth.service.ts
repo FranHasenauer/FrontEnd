@@ -12,11 +12,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-<<<<<<< HEAD
-  authURL = 'https://franhasenauer.onrender.com/auth/';
-=======
+
   authURL='https://franhasenauer.onrender.com/auth/';
->>>>>>> a345c1e632e0ad9fe78658ada5953c9dd4d02748
 
   constructor(private httpClient: HttpClient) { }
 

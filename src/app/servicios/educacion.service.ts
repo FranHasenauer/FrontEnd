@@ -7,11 +7,8 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-<<<<<<< HEAD
   eduURL = 'https://franhasenauer.onrender.com/edu/'
-=======
-  eduURL='https://franhasenauer.onrender.com/edu/';
->>>>>>> a345c1e632e0ad9fe78658ada5953c9dd4d02748
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Educacion[]> {
