@@ -8,7 +8,11 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
 
+<<<<<<< HEAD
   URL = 'https://franhasenauer.onrender.com/personas/';
+=======
+  URL='https://franhasenauer.onrender.com/personas/';
+>>>>>>> a345c1e632e0ad9fe78658ada5953c9dd4d02748
 
   constructor(private http: HttpClient) { }
 

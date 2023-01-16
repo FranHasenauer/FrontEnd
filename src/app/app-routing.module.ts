@@ -1,21 +1,23 @@
-import {NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { MiInformacionComponent } from './components/mi-informacion/mi-informacion.component';
-import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { ErrorPersonalizadoComponent } from './components/error-personalizado/error-personalizado.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/login/register/register.component';
-import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
-import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
-import { EditExperienciaComponent } from './components/experiencia-laboral/edit-experiencia/edit-experiencia.component';
-import { EducacionComponent } from './components/educacion/educacion.component';
-import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
-import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
-import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
-import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
-import { NewSkillsComponent } from './components/skills/new-skills/new-skills.component';
-import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { EditEducacionComponent } from "./components/educacion/edit-educacion/edit-educacion.component";
+import { EducacionComponent } from "./components/educacion/educacion.component";
+import { NewEducacionComponent } from "./components/educacion/new-educacion/new-educacion.component";
+import { ErrorPersonalizadoComponent } from "./components/error-personalizado/error-personalizado.component";
+import { EditExperienciaComponent } from "./components/experiencia-laboral/edit-experiencia/edit-experiencia.component";
+import { ExperienciaLaboralComponent } from "./components/experiencia-laboral/experiencia-laboral.component";
+import { NewExperienciaComponent } from "./components/experiencia-laboral/new-experiencia.component";
+import { LoginComponent } from "./components/login/login.component";
+import { RegisterComponent } from "./components/login/register/register.component";
+import { MiInformacionComponent } from "./components/mi-informacion/mi-informacion.component";
+import { EditProyectoComponent } from "./components/proyectos/edit-proyecto/edit-proyecto.component";
+import { NewProyectoComponent } from "./components/proyectos/new-proyecto/new-proyecto.component";
+import { ProyectosComponent } from "./components/proyectos/proyectos.component";
+import { EditSkillsComponent } from "./components/skills/edit-skills/edit-skills.component";
+import { NewSkillsComponent } from "./components/skills/new-skills/new-skills.component";
+import { SkillsComponent } from "./components/skills/skills.component";
+
+
 
 
 const routes: Routes = [

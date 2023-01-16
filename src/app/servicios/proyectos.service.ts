@@ -7,7 +7,11 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
+<<<<<<< HEAD
   proURL = 'https://franhasenauer.onrender.com/pro/'
+=======
+  proURL='https://franhasenauer.onrender.com/pro/';
+>>>>>>> a345c1e632e0ad9fe78658ada5953c9dd4d02748
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyectos[]> {
